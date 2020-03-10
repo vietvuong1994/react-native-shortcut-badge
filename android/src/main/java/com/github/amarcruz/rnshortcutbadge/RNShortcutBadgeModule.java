@@ -143,7 +143,8 @@ public class RNShortcutBadgeModule extends ReactContextBaseJavaModule {
 
         Notification.Builder builder = new Notification.Builder(context)
                 .setContentTitle("")
-                .setContentText("");
+                .setContentText("")
+                .setSmallIcon(R.drawable.ic_launcher);
         //.setSmallIcon(R.drawable.ic_launcher);
         Notification notification = builder.build();
         ShortcutBadger.applyNotification(context, notification, count);
